@@ -1,0 +1,19 @@
+// Import fonts
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700,400italic);
+
+// Import mixins
+@import 'mixins';
+
+// Reset css
+@import '_modules/reset';
+
+// Import defaults
+@import 'defaults';
+
+// Import used modules
+@import '_modules/base';
+@import '_modules/hero';
+@import '_modules/about';
+@import '_modules/skills';
+@import '_modules/experience';
+@import '_modules/footer';

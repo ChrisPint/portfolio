@@ -1,0 +1,105 @@
+.experience {
+  .odd {
+    padding-left: 25px;
+
+    &:before {
+      left: -18px;
+    }
+
+    &:after {
+      left: -13px;
+    }
+
+    @include  bp(small) {
+      &:before {
+        left: -5px;
+      }
+
+      &:after {
+        left: 0;
+      }
+    }
+
+  }
+
+  .even {
+    padding-right: 25px;
+    text-align: right;
+
+    &:before {
+      right: -18px;
+    }
+
+    &:after {
+      right: -13px;
+    }
+
+    @include bp(small) {
+      padding: 0 0 0 25px;
+      text-align: left;
+
+      &:before {
+        left: -5px;
+      }
+
+      &:after {
+        left: 0;
+      }
+    }
+  }
+
+  .time {
+    color: #c6c6c6;
+    font-size: 16px;
+  }
+
+  .title {
+    @extend .font-bold;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .comment {
+
+  }
+
+  .box {
+    position: relative;
+    padding-bottom: 45px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+    }
+
+    // Little dot
+    &:before {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $color-accent;
+      border: 5px solid $color-gray-light;
+      // set z index to lay above :after element
+      z-index: 1;
+    }
+
+    // Stroke
+    &:after {
+      top: 2px;
+      width: 10px;
+      background: $color-gray-light;
+      height: 110%;
+    }
+  }
+
+  // Hide the stroke on the last item in the row
+  .row > div {
+    &:last-child {
+      .box:after {
+        background: none;
+      }
+    }
+  }
+}
