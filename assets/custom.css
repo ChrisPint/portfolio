@@ -57,6 +57,14 @@ html .container, body .container {
   width: 100% !important;
 }
 
+.float-left {
+  float: left!important;
+}
+
+.float-right {
+  float: right!important;
+}
+
 .bg-gray {
   background-color: rgba(0,0,0,.7);
   color: white;
@@ -658,6 +666,12 @@ h2 {
   white-space: nowrap;
   background-color: #007bff;
   transition: width .6s ease;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
 }
 
 /*----- skills -----*/
