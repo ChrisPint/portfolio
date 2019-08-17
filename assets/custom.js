@@ -55,12 +55,12 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollFunction()};
 
 var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop + 50;
+var sticky = navbar.offsetTop + 100;
 
-function myFunction() {
+function scrollFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
@@ -68,23 +68,10 @@ function myFunction() {
   }
 }
 
+$(".navbar-toggler").click(function() {
+  // toggle the class after half second
+  setTimeout(function() {
+    $(".navbar-collapse").toggleClass("show");
+  }, 200);
+});
 
-
-
-
-
-    // navbar scrolling background
-    wind.on("scroll",function () {
-
-      var bodyScroll = $(window).scrollTop(),
-          navbar = $(".navbar-default");
-
-      if(bodyScroll > 300){
-
-          navbar.addClass("nav-scroll");
-
-      }else{
-
-          navbar.removeClass("nav-scroll");
-      }
-  });
