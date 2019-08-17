@@ -108,6 +108,17 @@ html .container, body .container {
 
 
 /*--- navigation ---*/
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
+
 @media (max-width: 768px) {
   .custom-nav {
     margin-top: 0px;
