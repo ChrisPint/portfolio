@@ -593,6 +593,15 @@ h2 {
 }
 
 @media (min-width: 992px) {
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+
+@media (min-width: 992px) {
   .col-lg-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
@@ -614,6 +623,42 @@ h2 {
 }
 }
 
+.mt-5, .my-5 {
+  margin-top: 3rem!important;
+}
+
+/*---- progress skill ---*/
+.skill-custom .progress {
+  height: 4px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: .25rem;
+}
+
+.skill-custom .progress-bar {
+  background: #000;
+}
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #007bff;
+  transition: width .6s ease;
+}
 
 /*----- skills -----*/
 .skills .box {
