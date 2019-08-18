@@ -74,6 +74,10 @@ html .container, body .container {
   color: white;
 }
 
+.bg-gray h2 {
+  color: white;
+}
+
 .header-bg {
   background: url(../assets/images/hero.jpg);
     background-attachment: fixed;
