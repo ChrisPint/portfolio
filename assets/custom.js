@@ -68,10 +68,3 @@ function scrollFunction() {
   }
 }
 
-$(".navbar-toggler").click(function() {
-  // toggle the class after half second
-  setTimeout(function() {
-    $(".navbar-collapse").toggleClass("show");
-  }, 200);
-});
-
