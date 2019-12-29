@@ -148,6 +148,7 @@ html .container, body .container {
 
 .custom-nav .navbar-nav li a {
   margin: 0 7px;
+  color: white;
 }
 
 .sticky {
