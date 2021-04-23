@@ -1,3 +1,3 @@
-# portfolio
+![Title](./assets/images/ChrisZieTitle.gif)
 
-My own portfolio website under http://chriszie.rocks/
+This is my portfolio website under http://chriszie.rocks/
